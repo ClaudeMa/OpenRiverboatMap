@@ -621,6 +621,24 @@
 }
 
 /* ================================================================== */
+/* WEIRS
+/* ================================================================== */
+
+#weirs::label[zoom>=17],
+#weirs_polygons::label[zoom>=17]
+{
+  text-name: "[name]";
+  text-face-name:@sans_italic;
+  text-placement:line;
+  text-fill:@marina_text;
+  text-size:10;
+  text-halo-fill:@marina_halo;
+  text-halo-radius:2;
+  text-wrap-width: 50;
+  text-label-position-tolerance: 10;
+}
+
+/* ================================================================== */
 /* BRIDGES
 /* ================================================================== */
 

@@ -116,3 +116,20 @@ Map {
 #dams_polygons[zoom>=14] {
   polygon-fill: @land;
 }
+
+/* ================================================================== */
+/* WEIRS
+/* ================================================================== */
+#weirs[zoom>=14] {
+  line-cap: butt;
+  line-color: @land;
+  line-width: 3;
+  line-dasharray: 2, 2;
+  [zoom>16] {
+    line-dasharray: 10, 4;
+    line-width: 4;
+  }
+}
+#weirs_polygons[zoom>=14] {
+  polygon-fill: @land;
+}
